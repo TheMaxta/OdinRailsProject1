@@ -5,6 +5,12 @@ class ArticlesController < ApplicationController
 		@articles = Article.all
 	end
 
+	def tag_list
+ 	 self.tags.collect do |tag|
+    	tag.name
+  		end.join(", ")
+	end
+
 	def show
 		@article = Article.find(params[:id])
 		@comment = Comment.new

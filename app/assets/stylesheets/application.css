@@ -14,6 +14,14 @@
  *= require_self
  */
 
+.tag_buttons {
+    font-size: 13px;
+}
+
+.tag_buttons a {
+    color: #EA4040;
+}
+
 body div a:hover {
 	background: #d1d1d1;
 }
