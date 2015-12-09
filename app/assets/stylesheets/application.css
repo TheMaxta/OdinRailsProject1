@@ -14,3 +14,16 @@
  *= require_self
  */
 
+body div a:hover {
+	background: #d1d1d1;
+}
+ body div a {
+    color: #2d4159;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #E2E2E2;
+    border-radius: 3px;
+    border: 0.07em solid black;
+    text-decoration: none;
+
+}
