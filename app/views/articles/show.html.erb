@@ -5,9 +5,26 @@
 <br>
 <br>
 <br>
+<div class="swag">
+<%= link_to "<< Back", articles_path %>
+<%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
+<%= link_to "edit", edit_article_path(@article) %>
+</div>
+
+<br>
+<h3><%= @article.comments.count %> Comments:</h3> 
+<%= render partial: 'articles/comment', collection: @article.comments %>
+
+<br>
+<br>
+<%= render partial: 'comments/form' %>
+<br>
+<br>
+<br>
 <div>
 <%= link_to "<< Back", articles_path %>
 <%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
 <%= link_to "edit", edit_article_path(@article) %>
 </div>
+
 

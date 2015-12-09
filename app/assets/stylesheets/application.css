@@ -17,9 +17,15 @@
 body div a:hover {
 	background: #d1d1d1;
 }
+body div.swag {
+
+	border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+
  body div a {
     color: #2d4159;
-    margin: 5px;
+    margin: 3px;
     padding: 5px 10px;
     background: #E2E2E2;
     border-radius: 3px;
